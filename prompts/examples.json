@@ -1,0 +1,31 @@
+{
+  "examples": [
+    {
+      "id": "logic-001",
+      "domain": "logic",
+      "label": "robustness-test",
+      "statement": "If A implies B, and B implies C, which single-word label best describes the relation from A to C?",
+      "prompt": "[label:robustness-test] [domain:logic]\\nYou are given a short challenge about logic. Provide exactly one word as the answer. Keep your response to a single token-like word (no explanation). Statement: If A implies B, and B implies C, which single-word label best describes the relation from A to C?\\nConstraint: prompt context <= 80 words.",
+      "example_answer": "transitive",
+      "safe": true
+    },
+    {
+      "id": "geography-001",
+      "domain": "geography",
+      "label": "robustness-test",
+      "statement": "Name the country that is entirely surrounded by South Africa.",
+      "prompt": "[label:robustness-test] [domain:geography]\\nYou are given a short challenge about geography. Provide exactly one word as the answer. Keep your response to a single token-like word (no explanation). Statement: Name the country that is entirely surrounded by South Africa.\\nConstraint: prompt context <= 80 words.",
+      "example_answer": "Lesotho",
+      "safe": true
+    },
+    {
+      "id": "wordplay-001",
+      "domain": "wordplay",
+      "label": "robustness-test",
+      "statement": "Which single English word in this sentence is both a noun and a verb: 'They will help the help team'?",
+      "prompt": "[label:robustness-test] [domain:wordplay]\\nYou are given a short challenge about wordplay. Provide exactly one word as the answer. Keep your response to a single token-like word (no explanation). Statement: Which single English word in this sentence is both a noun and a verb: 'They will help the help team'?\\nConstraint: prompt context <= 80 words.",
+      "example_answer": "help",
+      "safe": true
+    }
+  ]
+}
